@@ -10,7 +10,7 @@ body, html{
 }
 
 
-.pimg1, .pimg2, .pimg3{
+.img1, .img2, .img3{
   position:relative;
   opacity:0.70;
   background-position:center;
@@ -24,32 +24,47 @@ body, html{
   background-attachment:fixed;
 }
 
-.pimg1{
+.img1{
   background-image:url('images/image1.jpg');
   min-height:100%;
 }
 
-.pimg2{
-  background-image:url('../img/image2.jpg');
+
+.img2{
+  background-image:url('images/image2.jpg');
   min-height:400px;
 }
 
-.pimg3{
-  background-image:url('../img/image3.jpg');
+.img3{
+  background-image:url('images/image3.jpg');
   min-height:400px;
 }
 
-.section{
+.img4{
+  background-image:url('images/image5.jpg');
+  min-height:400px;
+}
+
+.sectionmain{
   text-align:center;
   padding:50px 80px;
 }
 
-.section-light{
+.section1{
   background-color:#f4f4f4;
   color:#666;
 }
 
-.section-dark{
+.section2{
+  background-color:#282e34;
+  color:#ddd;
+}
+
+.section3{
+  background-color:#282e34;
+  color:#ddd;
+}
+.section4{
   background-color:#282e34;
   color:#ddd;
 }
@@ -75,7 +90,7 @@ body, html{
   background-color:transparent;
 }
 
-/*----------NAV BAR--------*/
+/*----------------------------------------NAV BAR-------------------------------------------------*/
 .sidenav {
   height: 100%;
   width: 0;
@@ -113,7 +128,6 @@ body, html{
 
 #scroller {
   text-align: center;
-  color: green;
   display: none;
 }
 
@@ -123,9 +137,6 @@ body, html{
 
 section:focus {
   outline: none;
-}
-.active{
-  background-color:red;
 }
 
 
