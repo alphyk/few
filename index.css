@@ -7,15 +7,11 @@ body, html{
   line-height:1.8em;
   color:#666;
   scroll-behavior: smooth;
-
- 
-
 }
-
 
 .img1, .img2, .img3{
   position:relative;
-  opacity:0.70;
+  opacity:0.90;
   background-position:center;
   background-size:cover;
   background-repeat:no-repeat;
@@ -54,18 +50,18 @@ body, html{
 }
 
 .section1{
-  background-color:#f4f4f4;
-  color:#666;
+  background-color:#282e34;
+  color:rgb(255, 255, 255);
 }
 
 .section2{
   background-color:#282e34;
-  color:#ddd;
+  color:rgb(255, 255, 255);
 }
 
 .section3{
   background-color:#282e34;
-  color:#ddd;
+  color:rgb(255, 255, 255);
 }
 .section4{
   background-color:#282e34;
@@ -105,12 +101,20 @@ body, html{
   overflow-x: hidden;
   transition: 0.5s;
   padding-top: 60px;
+  
 }
 
 #navicon{
   position: fixed;
   color: rgb(255, 0, 0);
-  width: 20%;
+z-index: 1;
+margin-top: 10px;
+
+
+
+
+
+
 
   
 }
