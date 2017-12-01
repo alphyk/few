@@ -7,6 +7,9 @@ body, html{
   line-height:1.8em;
   color:#666;
   scroll-behavior: smooth;
+
+ 
+
 }
 
 
@@ -95,13 +98,21 @@ body, html{
   height: 100%;
   width: 0;
   position: fixed;
-  z-index: 1;
+  z-index: 1000;
   top: 0;
   left: 0;
   background-color: #111;
   overflow-x: hidden;
   transition: 0.5s;
   padding-top: 60px;
+}
+
+#navicon{
+  position: fixed;
+  color: rgb(255, 0, 0);
+  width: 20%;
+
+  
 }
 
 .sidenav a {
@@ -125,6 +136,8 @@ body, html{
   font-size: 36px;
   margin-left: 50px;
 }
+
+
 
 #scroller {
   text-align: center;
