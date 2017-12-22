@@ -47,6 +47,20 @@ html,body{
     color: #fff;
     border: solid #fff 3px;
 }
+
+
+
+  
+  svg {
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+
+
 @media screen and (max-width: 768x){
     .content h1{
         font-size: 250%;
