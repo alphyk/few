@@ -1,236 +1,73 @@
-body, html{
-  height:100%;
-  margin:0;
-  font-size:16px;
-  font-family:"Lato", sans-serif;
-  font-weight:400;
-  line-height:1.8em;
-  color:#666;
-  scroll-behavior: smooth;
+﻿@import url('https://fonts.googleapis.com/css?family=Raleway');
+@import url('https://fonts.googleapis.com/css?family=Oswald');
+
+html,body{
+    margin:0;
+    padding:0;
+    height: 100%;
+    width: 100%;
 }
-
-.img1, .img2, .img3{
-  position:relative;
-  opacity:0.90;
-  background-position:center;
-  background-size:cover;
-  background-repeat:no-repeat;
-
-  /*
-    fixed = parallax
-    scroll = normal
-  */
-  background-attachment:fixed;
+.intro {
+    height: 100%;
+    width: 100%;
+    margin:auto;
+    background: url('images/landpagebg.jpg') no-repeat 50% 50%;
+    display: table;
+    top:0;
+    background-size: cover;
 }
-
-.img1{
-  background-image:url('images/image1.jpg');
-  min-height:100%;
+.intro.inner {
+    display: table-cell;
+    width: 100%;
+    max-width: none;
 }
-
-
-.img2{
-  background-image:url('images/image2.jpg');
-  min-height:400px;
+.content {
+    max-width: 500px;
+    margin: 0 auto;
+    text-align: center;
+    padding-top: 410px;
 }
-
-.img3{
-  background-image:url('images/image3.jpg');
-  min-height:400px;
+.content h1{
+    font-family: 'Raleway', sans-serif;
+    color: #f9f3f4;
+    text-shadow: 0px 0px 300px #000;
+    font-size: 300%;
 }
-
-.img4{
-  background-image:url('images/image5.jpg');
-  min-height:400px;
+.btn{
+    border-radius: 9px;
+    font-family: 'Oswald', sans-serif;
+    color: #036A81;
+    font-size:135%;
+    padding:10px 20px;
+    border:solid #036a81 3px;
+    text-transform: uppercase;
+    text-decoration: none;
 }
-
-.sectionmain{
-  text-align:center;
-  padding:50px 80px;
+.btn:hover{
+    color: #fff;
+    border: solid #fff 3px;
 }
-
-.section1{
-  background-color:#282e34;
-  color:rgb(255, 255, 255);
-}
-
-.section2{
-  background-color:#282e34;
-  color:rgb(255, 255, 255);
-}
-
-.section3{
-  background-color:#282e34;
-  color:rgb(255, 255, 255);
-}
-.section4{
-  background-color:#282e34;
-  color:#ddd;
-}
-
-.ptext{
-  position:absolute;
-  top:50%;
-  width:100%;
-  text-align:center;
-  color:#000;
-  font-size:27px;
-  letter-spacing:8px;
-  text-transform:uppercase;
-}
-
-.ptext .border{
-  background-color:#111;
-  color:#fff;
-  padding:20px;
-}
-
-.ptext .border.trans{
-  background-color:transparent;
-}
-
-/*----------------------------------------NAV BAR-------------------------------------------------*/
-.sidenav {
-  height: 100%;
-  width: 0;
-  position: fixed;
-  z-index: 1000;
-  top: 0;
-  left: 0;
-  background-color: #111;
-  overflow-x: hidden;
-  transition: 0.5s;
-  padding-top: 60px;
-  opacity: 1;
-}
-
-#navicon{
-  position: fixed;
-  color: rgb(255, 0, 0);
-z-index: 1;
-margin-top: 10px;
--webkit-text-stroke-width: 4px;
--webkit-text-stroke-color: rgb(255, 0, 0);
-
-
 
 
 
   
-}
-
-.sidenav a {
-  padding: 8px 8px 8px 32px;
-  text-decoration: none;
-  font-size: 25px;
-  color: #818181;
-  display: block;
-  transition: 0.3s;
-
-
-}
-
-.sidenav a:hover {
-  color: #f1f1f1;
-}
-
-.sidenav .closebtn {
-  position: absolute;
-  top: 0;
-  right: 25px;
-  font-size: 36px;
-  margin-left: 50px;
-}
-
-
-
-#scroller {
-  text-align: center;
-  display: none;
-}
-
-#scroller.supported {
-  display: block;
-}
-
-section:focus {
-  outline: none;
-}
-
-
-
-
-
-
-
-
-
-
-
-
-.container {
-  position: relative;
-  width: 250px;
-  margin-left: 20px;
-  
-}
-
-.image {
-  display: block;
-  width: 250px;
-  height: auto;
-}
-
-.overlay {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  height: 100%;
-  width: 250px;
-  opacity: 0;
-  transition: .5s ease;
-  background-color: rgb(0, 0, 0);
-}
-
-.container:hover .overlay {
-  opacity: 0.8;
-}
-
-.text {
-  color: white;
-  font-size: 20px;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-@media screen and (min-height: 450px) {
-.sidenav {padding-top: 15px;}
-.sidenav a {font-size: 18px;}
-}
-/*-----------------------------------------*/
-@media(max-width:568px){
-  .img1, .img2, .img3{
-    background-attachment:scroll;
+  svg {
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
   }
-}
 
+
+
+@media screen and (max-width: 768x){
+    .content h1{
+        font-size: 250%;
+    }
+    .btn{
+        font-size: 110%;
+        padding: 7px 15px;
+    }
+}
+    
