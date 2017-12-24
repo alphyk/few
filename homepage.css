@@ -165,139 +165,187 @@ section:focus {
 
 
 
+/*----------------------------------------FOOTER-------------------------------------------------*/
 
 
+.footer-main{
+	background-color: #292c2f;
+	box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
+	box-sizing: border-box;
+	width: 100%;
+	font: bold 16px sans-serif;
+	text-align: left;
 
-
-
-
-
-
-.imagehover1 {
-  position: relative;
-  width: 250px;
-  margin-left: 20px;
-  
+	padding: 50px 60px 40px;
+	margin-top: 80px;
+	overflow: hidden;
 }
 
-.bkhalifa {
-  display: block;
-  width: 250px;
-  height: auto;
+/* Footer left */
+
+.footer-main .footer-left{
+	float: left;
 }
 
-.bkhalifaoverlay {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  height: 100%;
-  width: 250px;
-  opacity: 0;
-  transition: .5s ease;
-  background-color: rgb(0, 0, 0);
+/* The company logo */
+
+.footer-main h3{
+	color:  #ffffff;
+	font: normal 36px 'Cookie', cursive;
+	margin: 0 0 10px;
 }
 
-.imagehover1:hover .bkhalifaoverlay {
-  opacity: 0.8;
+.footer-main h3 span{
+	color:  #5383d3;
 }
 
-.text {
-  color: white;
-  font-size: 20px;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
+/* Footer social icons */
+
+.footer-main .footer-icons{
+	margin-top: 40px;
 }
 
+.footer-main .footer-icons a{
+	display: inline-block;
+	width: 35px;
+	height: 35px;
+	cursor: pointer;
+	background-color:  #33383b;
+	border-radius: 2px;
 
-/* Style the Image Used to Trigger the Modal */
-#myImg {
-  border-radius: 5px;
-  cursor: pointer;
-  transition: 0.3s;
-  z-index: 1; 
+	font-size: 20px;
+	color: #ffffff;
+	text-align: center;
+	line-height: 35px;
+
+	margin-right: 3px;
+	margin-bottom: 5px;
 }
 
-#myImg:hover {opacity: 0;}
+/* Footer Right */
 
-/* The Modal (background) */
-.modal {
-  display: none; /* Hidden by default */
-  position: fixed; /* Stay in place */
-  z-index: 1; /* Sit on top */
-  padding-top: 100px; /* Location of the box */
-  left: 0;
-  top: 0;
-  width: 100%; /* Full width */
-  height: 100%; /* Full height */
-  overflow: auto; /* Enable scroll if needed */
-  background-color: rgb(0,0,0); /* Fallback color */
-  background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+.footer-main .footer-right{
+	float: right;
 }
 
-/* Modal Content (Image) */
-.modal-content {
-  margin: auto;
-  display: block;
-  width: 80%;
-  max-width: 700px;
-z-index: 1;
+.footer-main .footer-right p{
+	display: inline-block;
+	vertical-align: top;
+	margin: 15px 42px 0 0;
+	color: #ffffff;
 }
 
-/* Caption of Modal Image (Image Text) - Same Width as the Image */
-#caption {
-  margin: auto;
-  display: block;
-  width: 80%;
-  max-width: 700px;
-  text-align: center;
-  color: #ccc;
-  padding: 10px 0;
-  height: 150px;
+/* The contact form */
 
+.footer-main form{
+	display: inline-block;
 }
 
-/* Add Animation - Zoom in the Modal */
-.modal-content, #caption { 
-  animation-name: zoom;
-  animation-duration: 0.6s;
+.footer-main form input,
+.footer-main form textarea{
+	display: block;
+	border-radius: 3px;
+	box-sizing: border-box;
+	background-color:  #1f2022;
+	box-shadow: 0 1px 0 0 rgba(255, 255, 255, 0.1);
+	border: none;
+	resize: none;
 
+	font: inherit;
+	font-size: 14px;
+	font-weight: normal;
+	color:  #d1d2d2;
+
+	width: 400px;
+	padding: 18px;
 }
 
-@keyframes zoom {
-  from {transform:scale(0)} 
-  to {transform:scale(1)}
-  
+.footer-main ::-webkit-input-placeholder {
+	color:  #5c666b;
 }
 
-/* The Close Button */
-.close {
-  position: absolute;
-  top: 15px;
-  right: 35px;
-  color: #f1f1f1;
-  font-size: 40px;
-  font-weight: bold;
-  transition: 0.3s;
-  z-index: 1;
-
+.footer-main ::-moz-placeholder {
+	color:  #5c666b;
+	opacity: 1;
 }
 
-.close:hover,
-.close:focus {
-  color: #bbb;
-  text-decoration: none;
-  cursor: pointer;
-z-index: 1;
+.footer-main :-ms-input-placeholder{
+	color:  #5c666b;
 }
 
 
+.footer-main form input{
+	height: 55px;
+	margin-bottom: 15px;
+}
 
+.footer-main form textarea{
+	height: 100px;
+	margin-bottom: 20px;
+}
 
+.footer-main form button{
+	border-radius: 3px;
+	background-color:  #33383b;
+	color: #ffffff;
+	border: 0;
+	padding: 15px 50px;
+	font-weight: bold;
+	float: right;
+}
+
+/* If you don't want the footer to be responsive, remove these media queries */
+
+@media (max-width: 1000px) {
+
+	.footer-main {
+		font: bold 14px sans-serif;
+	}
+
+	.footer-main .footer-company-name{
+		font-size: 12px;
+	}
+
+	.footer-main form input,
+	.footer-main form textarea{
+		width: 250px;
+	}
+
+	.footer-main form button{
+		padding: 10px 35px;
+	}
+
+}
+
+@media (max-width: 800px) {
+
+	.footer-main{
+		padding: 30px;
+	}
+
+	.footer-main .footer-left,
+	.footer-main .footer-right{
+		float: none;
+		max-width: 300px;
+		margin: 0 auto;
+	}
+
+	.footer-main .footer-left{
+		margin-bottom: 40px;
+	}
+
+	.footer-main form{
+		margin-top: 30px;
+	}
+
+	.footer-main form{
+		display: block;
+	}
+
+	.footer-main form button{
+		float: none;
+	}
+}
 
 
 
