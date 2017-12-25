@@ -147,7 +147,7 @@ margin-top: 10px;
   margin-left: 50px;
 }
 
-
+/*----------------------------------------Smooth Scroll-------------------------------------------------*/
 
 #scroller {
   text-align: center;
@@ -162,11 +162,7 @@ section:focus {
   outline: none;
 }
 
-
-
-
-
-
+/*----------------------------------------LightBox Gallery-------------------------------------------------*/
 
 .wiggle {
   display:block;
@@ -455,7 +451,7 @@ section:focus {
 	float: right;
 }
 
-/* If you don't want the footer to be responsive, remove these media queries */
+
 
 @media (max-width: 1000px) {
 

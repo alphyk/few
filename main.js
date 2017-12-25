@@ -1,6 +1,4 @@
 /*--------------------SVG Clock-----------------*/
-
-
 var hands = [];
 hands.push(document.querySelector('#secondhand > *'));
 hands.push(document.querySelector('#minutehand > *'));
@@ -37,42 +35,6 @@ for(var i = 1; i <= 12; i++) {
 }
 
 
-
-
-
-
-
-
-
-
-
-
-// Get the modal
-var modal = document.getElementById('myModal');
-
-// Get the image and insert it inside the modal - use its "alt" text as a caption
-var img = document.getElementById('myImg');
-var modalImg = document.getElementById("img01");
-var captionText = document.getElementById("caption");
-img.onclick = function(){
-    modal.style.display = "block";
-    modalImg.src = this.src;
-    captionText.innerHTML = this.alt;
-}
-
-// Get the <span> element that closes the modal
-var span = document.getElementsByClassName("close")[0];
-
-// When the user clicks on <span> (x), close the modal
-span.onclick = function() { 
-  modal.style.display = "none";
-}
-
-
-
-
-
-
 /*--------------------------Script for Nav Bar----------------------*/
 function openNav() {
     document.getElementById("navbar").style.width = "250px";
@@ -81,6 +43,7 @@ function openNav() {
 function closeNav() {
     document.getElementById("navbar").style.width = "0";
 }
+
 
 /*--------------------Scrolling Effect on Page-----------------*/
 
@@ -215,29 +178,29 @@ function jump(target, options) {
 
 }
 
-
+/*--------------------------Script for Google Map API----------------------*/
 function initMap() {
   let dubai = {lat: 25.204849, lng: 55.270783};
   let burjkhalifa = {lat: 25.197197, lng: 55.274376};
   let dubaimall = {lat: 25.198518, lng: 55.279619};
   let mapDemo = document.getElementById("map");
 
-  // this sets the default location for when the map is first loaded
+  // defaut location is set when the map loads
   let map = new google.maps.Map(mapDemo, {
-    zoom: 13,
+    zoom: 12,
     center: dubai
   });
 
-  // these set different markers you want to show on your map
+  // setting  markers for each location to view on the overall map 
   let markerBURJKHALIFA = new google.maps.Marker({
     position: burjkhalifa,
     map: map,
-    title: 'The Good Guys'
+    title: 'Burj Al Khalifa'
   });
   let markerDUBAIMALL = new google.maps.Marker({
     position: dubaimall,
     map: map,
-    title: 'The Bad Guys'
+    title: 'Dubai Mall'
   });
 }
 
