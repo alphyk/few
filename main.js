@@ -216,6 +216,30 @@ function jump(target, options) {
 }
 
 
+function initMap() {
+  let dubai = {lat: 25.204849, lng: 55.270783};
+  let burjkhalifa = {lat: 25.197197, lng: 55.274376};
+  let dubaimall = {lat: 25.198518, lng: 55.279619};
+  let mapDemo = document.getElementById("map");
+
+  // this sets the default location for when the map is first loaded
+  let map = new google.maps.Map(mapDemo, {
+    zoom: 13,
+    center: dubai
+  });
+
+  // these set different markers you want to show on your map
+  let markerBURJKHALIFA = new google.maps.Marker({
+    position: burjkhalifa,
+    map: map,
+    title: 'The Good Guys'
+  });
+  let markerDUBAIMALL = new google.maps.Marker({
+    position: dubaimall,
+    map: map,
+    title: 'The Bad Guys'
+  });
+}
 
 
 

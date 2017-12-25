@@ -47,23 +47,25 @@
     </section>
   
     <div class="img1">
-     <!-- Trigger the Modal -->
-<img id="myImg" src="images/image1.jpg" alt="Trolltunga, Norway" width="300" height="200">
+        <div id="lbimageone">
+            <a href="#image1" class="wiggle"><img src="http://placehold.it/150x150"/></a>
+            <div class="lightbox short-animate" id="image1">
+              <img class="long-animate" src="http://placehold.it/650x650"/>
+            </div>
+            <div id="lightbox-controls" class="short-animate">
+              <a id="close-lightbox" class="long-animate" href="#!">Close Lightbox</a>
+            </div>
+          </div>
 
-<!-- The Modal -->
-<div id="myModal" class="modal">
-
-  <!-- The Close Button -->
-  <span class="close">&times;</span>
-
-  <!-- Modal Content (The Image) -->
-  <img class="modal-content" id="img01">
-
-  <!-- Modal Caption (Image Text) -->
-  <div id="caption"></div>
-</div>
-
-  
+          <div id="contentone">
+              <a href="#image1" class="wiggle"><img src="http://placehold.it/150x150"/></a>
+              <div class="lightbox short-animate" id="image1">
+                <img class="long-animate" src="http://placehold.it/650x650"/>
+              </div>
+              <div id="lightbox-controls" class="short-animate">
+                <a id="close-lightbox" class="long-animate" href="#!">Close Lightbox</a>
+              </div>
+            </div>
       <div class="ptext">
         <span class="border trans">
         
@@ -99,32 +101,13 @@
   </section>
 
   <div class="img3">
-    <div class="ptext">
-      <span class="border">
-        hefkjgdfkjg
-      </span>
-    </div>
+
+    <div id="map"></div>
+
   </div>
 
-  <a name= "4">
-
-  <section class="sectionmain section4">
-    <h2>Section Four</h2>
-    <p>
-      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt, laudantium, quibusdam? Nobis, delectus, commodi, fugit amet tempora facere dolores nisi facilis consequatur, odio hic minima nostrum. Perferendis eos earum praesentium, blanditiis sapiente labore aliquam ipsa architecto vitae. Minima soluta temporibus voluptates inventore commodi cumque esse suscipit optio aliquam et, dolorem a cupiditate nihil fuga laboriosam fugiat placeat dignissimos! Unde eveniet placeat quisquam blanditiis voluptatem doloremque fugiat dolor repellendus ratione in.
-    </p>
-  </section 4>
 
 
-  <div class="img4">
-    
-      <div class="ptext">
-        <span class="border trans">
-            
-        </span>
-      </div>
-    </div>
-  
 
 
     <footer class="footer-main">
@@ -163,7 +146,7 @@
 
 
 
-
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAAW8VqqpF9EbDuqKi5aIY7-AMkTaNisRs&callback=initMap"></script>
   <script src="main.js"></script> 
 </body>
 
