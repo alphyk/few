@@ -182,27 +182,101 @@ function jump(target, options) {
 function initMap() {
   let dubai = {lat: 25.204849, lng: 55.270783};
   let burjkhalifa = {lat: 25.197197, lng: 55.274376};
+  let burjalarab = {lat: 25.141306, lng: 55.185348};
   let dubaimall = {lat: 25.198518, lng: 55.279619};
+  let dubaifountain = {lat: 25.195567, lng: 55.275515};
+  let palmjumeirah = {lat: 25.114948, lng: 55.137709};
+  let dubaicreek = {lat: 25.229351, lng: 55.292259};
+  let dubaimarina = {lat: 25.080542, lng: 55.140343};
   let mapDemo = document.getElementById("map");
 
   // defaut location is set when the map loads
   let map = new google.maps.Map(mapDemo, {
-    zoom: 12,
+    zoom: 11,
     center: dubai
   });
 
-  // setting  markers for each location to view on the overall map 
+  // setting markers for each location to view on the overall map 
   let markerBURJKHALIFA = new google.maps.Marker({
     position: burjkhalifa,
     map: map,
-    title: 'Burj Al Khalifa'
+    title: 'Burj Khalifa'
   });
+
+  let markerBURJALARAB = new google.maps.Marker({
+    position: burjalarab,
+    map: map,
+    title: 'Burj Al Arab'
+  });
+
   let markerDUBAIMALL = new google.maps.Marker({
     position: dubaimall,
     map: map,
     title: 'Dubai Mall'
   });
+    
+  let markerDUBAIFOUNTAIN = new google.maps.Marker({
+    position: dubaifountain,
+    map: map,
+    title: 'Dubai Fountain'
+  });
+
+  let markerPALMJUMEIRAH = new google.maps.Marker({
+    position: palmjumeirah,
+    map: map,
+    title: 'Palm Jumeirah'
+  });
+
+  let markerDUBAICREEK = new google.maps.Marker({
+    position: dubaicreek,
+    map: map,
+    title: 'Dubai Creek'
+  });
+
+  let markerDUBAIMARINA = new google.maps.Marker({
+    position: dubaimarina,
+    map: map,
+    title: 'Dubai Marina'
+  });
 }
 
 
 
+
+
+
+
+
+
+
+
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("demo");
+  var captionText = document.getElementById("caption");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+  captionText.innerHTML = dots[slideIndex-1].alt;
+}
+
+    
