@@ -102,6 +102,27 @@ body, html{
   background-color:transparent;
 }
 
+.ptext2{
+  position: static;
+  width:100%;
+  text-align:center;
+  color:#000;
+  font-size:27px;
+  letter-spacing:8px;
+  text-transform:uppercase;
+  padding-top: 150px;
+
+  
+}
+
+
+.ptext2 .border{
+  background-color:#111;
+  color:#fff;
+  padding:20px;
+}
+
+
 /*----------------------------------------NAV BAR-------------------------------------------------*/
 .sidenav {
   height: 100%;
@@ -264,7 +285,6 @@ img {
   height: 400px;
   width: 100%;
 }
-
 
 
 /*----------------------------------------FOOTER-------------------------------------------------*/
@@ -448,19 +468,6 @@ img {
 		float: none;
 	}
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 

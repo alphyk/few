@@ -1,4 +1,4 @@
-/*--------------------SVG Clock-----------------*/
+/*----------------------SVG Clock-------------------------*/
 var hands = [];
 hands.push(document.querySelector('#secondhand > *'));
 hands.push(document.querySelector('#minutehand > *'));
@@ -241,14 +241,7 @@ function initMap() {
 }
 
 
-
-
-
-
-
-
-
-
+/*--------------------------Script for Slideshow----------------------*/
 
 var slideIndex = 1;
 showSlides(slideIndex);
