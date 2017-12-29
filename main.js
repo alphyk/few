@@ -37,7 +37,7 @@ for(var i = 1; i <= 12; i++) {
 
 /*--------------------------Script for Nav Bar----------------------*/
 function openNav() {
-    document.getElementById("navbar").style.width = "250px";
+    document.getElementById("navbar").style.width = "20%";
 }
 
 function closeNav() {
