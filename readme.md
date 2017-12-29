@@ -27,15 +27,16 @@ The first stage was to develop a sketch of the website. The plans of the website
 ![plan 1](websiteplans/area1.jpg) 
 ![plan 2](websiteplans/area2.jpg) 
 ![plan 3](websiteplans/area3.jpg) 
+
+# Nav Bar
+My first idea was to have a fixed horizontal nav bar at the top, however, after reseraching other parralax websites, I changed my style to a hamburger style menu as that was more modern. My next plan was to make the nav bar stay in a fixed position as that will be be more user friendly. The nav bar will have 4 sections and will be linked to the relevant section on the page.
+
 ## how the navbar operates in this website
 ![nav plan 1](websiteplans/navstatus1.jpg) 
 ![nav plan 2](websiteplans/navstatus2.jpg) 
 
 # Video
 The user is greeted with a video of Dubai when visiting the website. The video shows all the attractions od Dubai. I did this to give a good impression for the user, so they will carry on navigating the website. Just as the video loads the hamburger style nav bar will appear on the left hand side of the page.
-
-# Nav Bar
-My first idea was to have a fixed horizontal nav bar at the top, however, after reseraching other parralax websites, I changed my style to a hamburger style menu as that was more modern. My next plan was to make the nav bar stay in a fixed position as that will be be more user friendly. The nav bar will have 4 sections and will be linked to the relevant section on the page.
 
 # Section 1 Top attractions
 My first idea was to have a slideshow just showing pictures of the top places in Dubai. However, after asking opinion to other students and tutors I was told to do something that interacts with the user more. Working on the feedback I recieved and with help from W3Schools, I developed a slideshow where users can select the thumbnail image (location images) they want to view and know more information about thier chosen location. 
@@ -70,8 +71,11 @@ All images used within the website are downloaded from Adobe Stock and Pexels.
 Features on page:
 
 https://www.w3schools.com/w3css/w3css_slideshow.asp
+
 https://www.w3schools.com/css/css_navbar.asp
+
 https://www.w3schools.com/howto/howto_css_parallax.asp
+
 https://www.w3schools.com/css/css_positioning.asp
 
 Youtube links to help with parallax:
