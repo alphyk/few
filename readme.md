@@ -1,8 +1,10 @@
 # Front End Web Development | CTEC3905
-##P15206364
+## P15206364
 
-##GitHub Pages Link 
+## GitHub Pages Link :
 https://alphyk25.github.io/frontendwebsite/
+## GitHub Repository Link :
+https://github.com/alphyk25/frontendwebsite
 
 # Introduction
 This is a tourism targeted website based on Dubai. The aim of the website is to guide dubai toursits on what to look around for when they visit. 
@@ -58,9 +60,26 @@ Responsiveness,how well the functions and technologies work & how the website in
 
 The website was tested on diffrent devices to ensure responsibility was working properly. Every element was tested and all it did work properly on all devices. Everything was resizing according to how it was set for different devices.
 
+The person who tested the website mentioned the website is good and interacts with the audience a lot. Also, mentioned that the design and layout is visually pleasing. On testing the responsivness of the website, the person said all items fit according to the device and all the links work perfecty. However, on the improvement side of things, the person mentioned to include more on the navbar and footer.
+
 # Reference
 Background/Images:
+
 All images used within the website are downloaded from Adobe Stock and Pexels.
+
+Features on page:
+
+https://www.w3schools.com/w3css/w3css_slideshow.asp
+https://www.w3schools.com/css/css_navbar.asp
+https://www.w3schools.com/howto/howto_css_parallax.asp
+https://www.w3schools.com/css/css_positioning.asp
+
+Youtube links to help with parallax:
+
+https://www.youtube.com/watch?v=eDIZoNlJ60o
+
+https://www.youtube.com/watch?v=JttTcnidSdQ
+
 
 
 # Compatibility
@@ -81,7 +100,7 @@ Finally, I will make it compatible with different browsers with custom rules for
 
 Criticism
 ------------------------------------------------------------------------------------------------------------------------
-Even though everything worked according to plan, I would still improve it if I had another chance, however everything went according to what I expected it to be. Some elements would have been easier if done with JQuery and Bootstrap but most of it did go according to plan.
+Even though everything worked according to plan, I would still improve it if I had another chance. Some elements would have been easier if done with JQuery and Bootstrap but most of the functions worked just fine.
 
 # Tools used
  VS Code
